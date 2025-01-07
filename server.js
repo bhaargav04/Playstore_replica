@@ -65,6 +65,18 @@ app.get('/profile',function(req,res){
 	res.render('profile');
 })
 
+app.get('/games',(req,res)=>{
+	res.render('games');
+})
+
+app.get('/apps',(req,res)=>{
+	res.render('apps');
+})
+
+app.get('/movies',(req,res)=>{
+	res.render('movies');
+})
+
 app.get("/signin", function (req, res) {
 	res.render("signin");
 });
