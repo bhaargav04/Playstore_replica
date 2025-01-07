@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+</head>
+<style>
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #71e0e6, #9b59b6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=srgb&dl=pexels-jplenio-1103970.jpg&fm=jpg);
+    background-size: cover;
+    
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 330px;
+    text-align: center;
+}
+
+
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px;
+}
+
+.container input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+}
+
+button {
+    width: 97%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #2980b9;
+    }
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+</style>
+<body>
+    <form action="/signup" method="post">
+        <div class="container">
+            <div class="input-group">
+            <label for="name">First Name</label>
+            <input type="text" name="firstname" placeholder="Enter your name" required>
+            <label for="name">Last Name</label>
+            <input type="text" name="lastname" placeholder="Enter your name" required>
+            <label for="name">Username</label>
+            <input type="text" name="username" placeholder="Enter your username" required>
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="Enter your password" required>
+            <button>Submit</button>
+        </div>
+            
+        
+        </div>
+    </form>
+
+</body>
+</html>

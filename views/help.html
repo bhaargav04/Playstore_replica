@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>help</title>
+<style>
+    body{
+        font-family: Arial,sans-serif;
+        font-size: 1em;
+        color:aqua;
+        background-color: whitesmoke;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+    .help{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .help:is(:not(:hover)) {
+        animation: animat 2s infinite;
+    }
+    .help:hover{
+        width: 350px;
+        height: 250px;
+        border-radius: 30px;
+    }
+    .help:hover .message{
+        opacity: 1;
+        transition: all 0.5s 0.5s ease;
+    }
+    .help:hover .search-icon{
+        display: none;
+    }
+    .message{
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .message-title{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+    .question-mark{
+        position: absolute;
+        font-size: 1.5em;
+        color: #333;
+    }
+    /* @keyframes animat{
+        0%{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        50%{
+            box-shadow: 0 0 15px rgba(51,70,244,0.868);
+        }
+        100%{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    } */
+</style>
+</head>
+<body>
+    <div class="help">
+        <span class="help-alert"></span>
+        <span class="search-icon">?</span>
+        <div class="message">
+            <span class="message-title">Summa</span>
+            <span class="message-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe perferendis
+                explicabo magnam odit, ratione vel tenetur dignissimos ex aperiam neque, dolorum unde inventore 
+                expedita aspernatur, distinctio dicta sed consequatur? Dicta?</span> 
+        </div>
+    </div>
+</body>
+</html>

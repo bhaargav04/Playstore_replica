@@ -1,0 +1,478 @@
+<html>
+
+<head>
+  <title>Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .r1 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+    }
+
+    .r2 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+    }
+
+    .r3 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+    }
+
+    .r4 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+    }
+
+    .r5 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+    }
+
+    .foot {
+      display: flex;
+      background-color: black;
+      justify-content: space-evenly;
+      height: 100px;
+      align-items: center;
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .foot h1 {
+      font-size: 15px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 10px;
+      margin-top: 20px;
+      margin-right: 400px;
+     
+      a {
+        text-decoration: none;
+      }
+
+    }
+
+    .logo h1 {
+      font-size: 34px;
+    }
+
+    .logo h3 {
+      font-size: 25px;
+    }
+
+    .logo .fa {
+      margin-left: 490px;
+      margin-top: -10px;
+      font-size: 20px;
+      align-items: center;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    .logo .fa:hover {
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .sec2 h2 {
+      margin-top: 10px;
+      margin-bottom: 2px;
+      margin-left: 70px;
+    }
+
+    .sec2 h5 {
+      margin-top: 0px;
+      margin-left: 70px;
+    }
+
+    .sec2 h1 {
+      margin-left: 0;
+    }
+    .slide{
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 62px;
+      border-color: black;
+    }
+    .help{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: #fff;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: all 0.5s ease;
+        cursor: pointer;
+        overflow: hidden;
+    }
+    .help:is(:not(:hover)) {
+        animation: animat 2s infinite;
+    }
+    .help:hover{
+        width: 300px;
+        height: 100px;
+        border-radius: 30px;
+    }
+    .help:hover .message{
+        opacity: 1;
+        transition: all 0.5s 0.5s ease;
+    }
+    .help:hover .userinfo{
+        display: none;
+    }
+    .message{
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .message-title{
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+    }
+    .userinfo{
+        position: absolute;
+        font-size: 1.5em;
+        color: #333;
+    }
+    /* @keyframes animat{
+        0%{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        50%{
+            box-shadow: 0 0 15px rgba(51,70,244,0.868);
+        }
+        100%{
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    } */
+    .userinfo .fa{
+      font-size: 50px;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="https://i1.wp.com/9to5google.com/wp-content/uploads/sites/4/2022/07/current-google-play-icon.jpg?ssl=1"
+      alt="" width="50" height="50">
+    <h1>Google Play</h1>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="/games.html">
+      <h3>Games</h3>
+    </a> &nbsp; &nbsp;
+    <a href="/apps">
+      <h3>Apps</h3>
+    </a> &nbsp; &nbsp;
+    <a href="http://127.0.0.1:8000/views/movies.html">
+      <h3>Movies</h3>
+    </a> &nbsp; &nbsp;
+    <a href="">
+      <h3>Books</h3>
+    </a> &nbsp; &nbsp;
+    <a href="">
+      <h3>Kids</h3>
+    </a>
+    <!-- <i class="fa fa-search" aria-hidden="true"></i> -->
+  </div>
+  <div class="sec2">
+    <h2>Play your favorites on the big screen</h2>
+    <h5>Google Play Games on PC</h5>
+    <h1>Sponsored:</h1>
+  </div>
+
+
+  <div class="slide">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1446890/capsule_616x353.jpg?t=1699868509" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.indianexpress.com/2024/04/Bullet-Echo-India.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="https://i.ytimg.com/vi/veCXXRBcTBQ/maxresdefault.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+
+
+  <!-- card -->
+  <h1>Suggested for you:</h1>
+  <div class="r1">
+    <div class="card" style="width: 18rem;">
+      <img src="https://m.media-amazon.com/images/I/51L0-hXjy+L.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Minecraft</h5>
+        <p class="card-text">Mojang<br></i>4.5&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/apps/details?id=com.mojang.minecrafttrialpe&hl=en"
+          class="btn btn-success">Install</a>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img
+        src="data:image/jpeg;base64,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"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Battlegrounds Mobile India</h5>
+        <p class="card-text">KRAFTON, Inc<br>4.6&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=pubg&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+
+
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://pbs.twimg.com/profile_images/1110191110553587714/i5uu1Mu2_400x400.png" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Shadow Fight 3</h5>
+        <p class="card-text">NEKKI<br>4.4&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=shadow%20fight%203&c=apps&hl=en"
+          class="btn btn-success">Install</a>
+      </div>
+
+
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://images.sftcdn.net/images/t_app-icon-m/p/9bd1bef2-6280-11e8-b3ce-0242ac120007/3876036160/plants-vs-zombies-free-logo"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Plant vs. Zombies</h5>
+        <p class="card-text">ELECTRONIC ARTS<br>4.3&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=plant%20vs%20zombie&c=apps&hl=en"
+          class="btn btn-success">Install</a>
+      </div>
+    </div>
+  </div>
+  <h1>Editors & Players:</h1>
+  <div class="r2">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/d7/c8/a8/d7c8a83b9ba0fdc82ba70fe1ba942542.jpg" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">KineMaster</h5>
+        <p class="card-text">KineMaster,Video Editor Experts<br>Group<br>4.3&nbsp;<i class="fa fa-star"
+            aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=kine%20master&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1CFeHbPO0yk_8Z8uTkjuMvqtrgGHIcd43A&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">PowerDirector</h5>
+        <p class="card-text">Cyberlink Corp<br>4.4&nbsp;<i class="fa fa-star" aria-hidden="true"></i><br>&nbsp;</p>
+        <a href="https://play.google.com/store/search?q=powerdirector&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYJ7_bV9Pl367voArdnOkyGnlD9Abnq7RHNw&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">VLC Player</h5>
+        <p class="card-text">Videolabs<br>4.2&nbsp;<i class="fa fa-star" aria-hidden="true"></i><br>&nbsp;</p>
+        <a href="https://play.google.com/store/search?q=vlc&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://archive.org/download/mx-player-logo-450x450/mx-player-logo-450x450.png" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">MX Player</h5>
+        <p class="card-text">MX Media & Entertainment Pte Ltd<br>4.1&nbsp;<i class="fa fa-star"
+            aria-hidden="true"></i><br>&nbsp;</p>
+        <a href="https://play.google.com/store/search?q=mx+player&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+  </div>
+  <h1>Entertainment:</h1>
+  <div class="r3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm0MHSFbU6ieTIImWClo_8M34dLzoF22X82Q&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Amazon Prime Video</h5>
+        <p class="card-text">Amazon Mobile LLC<br>3.8&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=amazon+prime&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://asset.brandfetch.io/id4J58sqa_/idYuv668fY.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BookMyShow</h5>
+        <p class="card-text">Bigtree Entertainment Pvt.Ltd.<br>4.2&nbsp;<i class="fa fa-star" aria-hidden="true"></i>
+        </p>
+        <a href="https://play.google.com/store/search?q=bookmyshow&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/020/336/292/original/steam-logo-steam-icon-free-free-vector.jpg"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Steam</h5>
+        <p class="card-text">Valve Corporation<br>2.9&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=steam&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://logosandtypes.com/wp-content/uploads/2020/10/Xbox.png" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Xbox</h5>
+        <p class="card-text">Microsoft Corporation<br>4.4&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=xbox&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+  </div>
+  <h1>Premium apps:</h1>
+  <div class="r4">
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmMi7yGAIO3Y-ZwFKeBUHSpuCBLlbKhJnAqQ&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">U torrent Pro</h5>
+        <p class="card-text">Rainberry, Inc<br>4.1&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/apps/details?id=com.utorrent.client.pro&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://play-lh.googleusercontent.com/7f1Ds9TiQOh1JFQKTLrZgpE6cOdjg2QEP9H6oQIMhuNE8b0cC-g2c_fB1a6PpA3fDg=w240-h480-rw"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ZArchiver Donate</h5>
+        <p class="card-text">ZDevs<br>4.2&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver.pro&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/736x/1a/1f/4b/1a1f4bba1461970cc45466bcf171da0c.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">FL STUDIO</h5>
+        <p class="card-text">Image-Line<br>4.2&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/apps/details?id=com.imageline.FLM&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://play-lh.googleusercontent.com/c1CzkGUNvVuocVIKeXDVUfmO2FAEuWsIHQK3vVLuPRaKVqKYu4_1Ss3nsSoiqEQq0aM"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">KM Player plus</h5>
+        <p class="card-text">PANDORA.TV<br>3.1&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/apps/details?id=com.kmplayer.d&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+  </div>
+  <h1>Watch TV & Movies:</h1>
+  <div class="r5">
+    <div class="card" style="width: 18rem;">
+      <img src="https://i.pinimg.com/originals/ae/a6/f5/aea6f543a891c8bb4708ed55bdb4cef0.png" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Netflix</h5>
+        <p class="card-text">Netflix, Inc<br>4.0&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=netflix&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiaI8xIpD7Q4vObh-2V9hxyx1JqiVSj1h4CA&s"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Disney+ Hotstar</h5>
+        <p class="card-text">STAR INDIA PRIVATE LIMITED<br>4.0&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=disney+hotstar&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img
+        src="https://play-lh.googleusercontent.com/jFi2iC10wQJ42gu-DO2CMeIcN3qcmNQHtY5EBT_wtp4jCIozS4n3Q9pA7ZloDUGHHw"
+        class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Sun NXT</h5>
+        <p class="card-text">Sun TV Network Limited<br>4.3&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=sun%20nxt&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Zee5-official-logo.jpeg" class="card-img-top"
+        alt="...">
+      <div class="card-body">
+        <h5 class="card-title">ZEE5</h5>
+        <p class="card-text">Z5X Global FZ LLC<br>4.5&nbsp;<i class="fa fa-star" aria-hidden="true"></i></p>
+        <a href="https://play.google.com/store/search?q=zee%205&c=apps&hl=en" class="btn btn-success">Install</a>
+      </div>
+    </div>
+  </div>
+  <!-- card end -->
+  
+  
+  <footer>
+    <div class="foot">
+
+      <a href="">
+        <h1>Terms of Use</h1>
+      </a>
+      <a href="">
+        <h1>Privacy Policy</h1>
+      </a>
+      <a href="">
+        <h1>Addendum to the Global Privacy Policy</h1>
+      </a>
+      <a href="">
+        <h1>Interest-Based Ads</h1>
+      </a>
+      <a href="">
+        <h1>License Agreement</h1>
+      </a>
+      <a href="">
+        <h1>&copy; 2024 All rights reserved</h1>
+      </a>
+
+    </div>
+  </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</html>
