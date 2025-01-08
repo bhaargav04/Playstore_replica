@@ -8,6 +8,7 @@ var user = require("./database/user");
 
 mongoose.connect("mongodb+srv://bhaargav04:2005@cluster04.hvozw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster04/Google");
 var app = express();
+app.set('views', path.join(__dirname, 'views'));
 app.set("view engine", "ejs");
 app.use(bp.urlencoded({ extended: true }));
 
