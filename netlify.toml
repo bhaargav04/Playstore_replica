@@ -1,5 +1,5 @@
 [build]
-  publish = "public"  # The folder to publish (if you have static files)
+  publish = "dist"  # The folder to publish (if you have static files)
   command = "npm run build"  # Command to run before deployment
 
 [[redirects]]
