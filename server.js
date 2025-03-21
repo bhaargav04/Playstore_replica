@@ -5,6 +5,7 @@ var passportlocalmongoose = require('passport-local-mongoose');
 var passport = require('passport');
 var passportlocal = require('passport-local');
 var user = require("./database/user");
+const path = require('path');
 
 mongoose.connect("mongodb+srv://bhaargav04:2005@cluster04.hvozw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster04/Google");
 var app = express();
